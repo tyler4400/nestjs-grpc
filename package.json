@@ -1,0 +1,34 @@
+{
+  "name": "nestjs-app-pnpm-workspace",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "eslint-scope": "^7.2.2",
+    "eslint-visitor-keys": "^3.4.3",
+    "jest": "^29.7.0",
+    "prettier": "^3.3.2",
+    "prettier-linter-helpers": "^1.0.0",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.1",
+    "source-map-support": "^0.5.21",
+    "supertest": "^6.3.4",
+    "ts-jest": "^29.1.5",
+    "ts-loader": "^9.5.1",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.5.2"
+  },
+  "scripts": {
+    "dev": "pnpm run --filter='app-*' start:dev",
+    "start:main": "pnpm run --filter='app-main' start:dev",
+    "start:client": "pnpm run --filter='app-client' start:dev",
+    "build": "pnpm run --filter='app-*' build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
